@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aila Araghi - Modding & PC Building Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/shopstyle.css">
+</head>
+<body>
+
+    <!-- Top Bar with Search and Navigation -->
+    <div class="top-bar">
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="#playstation">PlayStation</a>
+                <a href="#nintendo">Nintendo</a>
+                <a href="#xbox">Xbox</a>
+                <a href="#pc">PC</a>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="values.html">Values</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop-section">
+        <h2>Modding and PC Building Services</h2>
+        <p>Explore expert modding services for gaming consoles and custom PC builds designed for your needs.</p>
+        
+        <!-- PlayStation Section -->
+        <div class="shop-category">
+            <h3>PlayStation Modding Services</h3>
+            <ul class="shop-items">
+                <li class="shop-item">
+                    <h4>PSP Modding</h4>
+                    <p>Full PSP modding service for custom firmware installation and more.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>PS Vita Modding</h4>
+                    <p>Custom firmware installation, homebrew, and enhanced features for your PS Vita.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>PlayStation 1 Modding</h4>
+                    <p>Enhance your PlayStation 1 with custom mods, optical drive emulation, and more.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>PlayStation 2 Modding</h4>
+                    <p>Transform your PS2 with modchips, custom firmware, and more for ultimate retro gaming.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>PlayStation 3 Modding</h4>
+                    <p>Unlock full potential with CFW (custom firmware), modchips, and more on your PS3.</p>
+                </li>
+            </ul>
+            <a href="ps.html" class="explore-more-btn">Explore Rare PlayStation Product Selection</a>
+        </div>
+
+        <!-- Nintendo Section -->
+        <div class="shop-category">
+            <h3>Nintendo Modding Services</h3>
+            <ul class="shop-items">
+                <li class="shop-item">
+                    <h4>GameBoy Modding</h4>
+                    <p>Install backlit screens, custom shells, and other enhancements for your GameBoy.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>GameCube Modding</h4>
+                    <p>Custom modchips, HDMI output mods, and more for your GameCube.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>Nintendo DS/3DS Modding</h4>
+                    <p>Unlock homebrew, custom themes, and more with modding services for DS and 3DS.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>Nintendo Switch Modding</h4>
+                    <p>Install custom firmware for homebrew, backups, and other features on your Switch.</p>
+                </li>
+            </ul>
+            <a href="nintendo-products.html" class="explore-more-btn">Explore Rare Nintendo Product Selection</a>
+        </div>
+
+        <!-- Xbox Section -->
+        <div class="shop-category">
+            <h3>Xbox Modding Services</h3>
+            <ul class="shop-items">
+                <li class="shop-item">
+                    <h4>Xbox Original Modding</h4>
+                    <p>Custom firmware, modchips, and emulation setups for the original Xbox.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>Xbox 360 Modding</h4>
+                    <p>Install custom firmware, modchips, and other modifications to unlock full potential.</p>
+                </li>
+            </ul>
+            <a href="xbox-products.html" class="explore-more-btn">Explore Rare Xbox Product Selection</a>
+        </div>
+
+        <!-- PC Building Section -->
+        <div class="shop-category">
+            <h3>Custom PC Builds</h3>
+            <ul class="shop-items">
+                <li class="shop-item">
+                    <h4>Custom Gaming PC Build</h4>
+                    <p>High-performance custom gaming PCs designed and built to suit your gaming needs.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>Workstation PC Build</h4>
+                    <p>Professional-grade PCs for heavy workloads like video editing, 3D rendering, and more.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>Home Office PC Build</h4>
+                    <p>Optimized PCs for everyday tasks, productivity, and a smooth workflow in your home office.</p>
+                </li>
+                <li class="shop-item">
+                    <h4>Budget PC Build</h4>
+                    <p>Affordable yet powerful custom-built PCs for gamers or professionals on a budget.</p>
+                </li>
+            </ul>
+            <a href="pc-products.html" class="explore-more-btn">Explore Rare PC Builds</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Aila Araghi
+    </footer>
+
+    <!-- JavaScript for Dropdown Menu -->
+    <script>
+        const searchBar = document.getElementById('search-bar');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        searchBar.addEventListener('focus', () => {
+            dropdownMenu.style.display = 'block'; // Show dropdown on focus
+        });
+
+        searchBar.addEventListener('input', (e) => {
+            const searchValue = e.target.value.toLowerCase();
+            const links = dropdownMenu.getElementsByTagName('a');
+            for (let i = 0; i < links.length; i++) {
+                const linkText = links[i].textContent.toLowerCase();
+                if (linkText.includes(searchValue)) {
+                    links[i].style.display = 'block';
+                } else {
+                    links[i].style.display = 'none';
+                }
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!searchBar.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.style.display = 'none'; // Hide dropdown when clicking outside
+            }
+        });
+    </script>
+
+</body>
+</html>

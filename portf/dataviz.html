@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualisation & Sensing - Slick Rick Influence - Aila Araghi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Embedded CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #3e4e56;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #98c1a2;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar ul li a {
+            color: #3e4e56;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .navbar ul li a:hover {
+            color: #6b8f71;
+        }
+
+        .navbar ul li a.active {
+            color: #6b8f71;
+        }
+
+        /* Project Header */
+        .project-header {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #6b8f71, #8caf82); /* Green gradient */
+            color: white;
+        }
+
+        .project-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .project-header p {
+            font-size: 1.3rem;
+        }
+
+        /* Project Details Section */
+        .project-details {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            border-top: 3px solid #98c1a2;
+            border-bottom: 3px solid #98c1a2;
+        }
+
+        .project-image img {
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-description {
+            max-width: 600px;
+            padding: 0 20px;
+        }
+
+        .project-description h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #3e4e56;
+        }
+
+        .project-description p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Play Game Button */
+        .view-project-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #6b8f71;
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-project-btn:hover {
+            background-color: #5a7b63;
+        }
+
+        /* Footer */
+        footer {
+            padding: 25px;
+            background-color: #98c1a2;
+            color: #3e4e56;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="../values.html">Values</a></li>
+            <li><a href="../shop.html">Shop</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Unique Header Section for Slick Rick Project -->
+    <header class="project-header">
+        <div class="project-content">
+            <h1>Data Visualisation & Sensing: Slick Rick's Influence</h1>
+            <p>A data visualisation project highlighting the impact of Slick Rick on the hip-hop industry.</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="project-details">
+        <div class="project-image">
+            <img src="../images/sample.png" alt="Slick Rick Data Visualisation Project">
+        </div>
+        <div class="project-description">
+            <h2>Project Overview</h2>
+            <p>This project showcases the immense influence of Slick Rick, the legendary storyteller of hip hop’s golden age. My interactive data visualisations allow users, especially hip-hop enthusiasts, to explore the vast network of artists who have sampled or drawn inspiration from his iconic tracks.</p>
+
+            <h2>Visualisations</h2>
+            <p>The first visualisation represents a rotating vinyl record, showing the number of times Slick Rick’s songs have been sampled. The second visualisation displays an interactive circular loop of artist names that have sampled Slick Rick. Finally, the third visualisation breaks down the storytelling elements of his famous track "Children’s Story," allowing users to interact with the song's structure.</p>
+
+            <h2>Technology Used</h2>
+            <p>The visualisations were created using P5.JS and JavaScript, with data sourced from Genius' API and Wikipedia. These interactive elements offer a visually captivating way to explore Slick Rick’s lasting legacy in the hip-hop genre.</p>
+            
+            <h2>Explore the Visualisations</h2>
+            <p>Click the links below to explore each of the data visualisations:</p>
+            <a href="https://editor.p5js.org/aila.araghi/full/Qukv-rM5f" class="view-project-btn">View Project 1</a>
+            <a href="https://editor.p5js.org/aila.araghi/full/_QUmTnNj0" class="view-project-btn">View Project 2</a>
+            <a href="https://editor.p5js.org/aila.araghi/full/Qukv-rM5f" class="view-project-btn">View Project 3</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Aila Araghi
+    </footer>
+
+</body>
+</html>

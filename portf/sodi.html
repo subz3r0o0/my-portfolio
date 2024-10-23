@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SODI - Graduate Project - Aila Araghi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Embedded CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #3e4e56;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #98c1a2;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar ul li a {
+            color: #3e4e56;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .navbar ul li a:hover {
+            color: #6b8f71;
+        }
+
+        .navbar ul li a.active {
+            color: #6b8f71;
+        }
+
+        /* Project Header */
+        .project-header {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #98c1a2, #6b8f71); /* Green gradient */
+            color: white;
+        }
+
+        .project-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .project-header p {
+            font-size: 1.3rem;
+        }
+
+        /* Project Details Section */
+        .project-details {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            border-top: 3px solid #98c1a2;
+            border-bottom: 3px solid #98c1a2;
+        }
+
+        .project-description {
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .project-description h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #3e4e56;
+        }
+
+        .project-description p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Image Styling */
+        .project-image img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 25px;
+            background-color: #98c1a2;
+            color: #3e4e56;
+            text-align: center;
+        }
+
+        /* Styling for subheadings */
+        .section-title {
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #3e4e56;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="../values.html">Values</a></li>
+            <li><a href="../shop.html">Shop</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Unique Header Section for SODI Project -->
+    <header class="project-header">
+        <div class="project-content">
+            <h1>SODI - Socratic Odyssey to Digital Inclusion</h1>
+            <p>Graduate Project - Exploring the Digital Divide Through Socratic Dialogue</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="project-details">
+        <div class="project-description">
+            <h2>Purpose of SODI</h2>
+            <p>In this era of rapid digital advancement, characterised by Industry 4.0 devices such as blockchain, artificial intelligence, and big data, the gap between technology's potential and accessibility is increasingly evident. SODI is an installation designed to raise awareness about the digital divide. It features an 'Agora' box where users respond to Socratic prompts, writing their insights on cards. These cards symbolise users' contributions towards bridging the digital divide, engaging participants in reflective and collaborative discussions.</p>
+
+            <p>The SODI project draws inspiration from the Socratic method, encouraging an environment of inquiry and dialogue. Socrates emphasised the importance of asking questions and sharing knowledge. By encouraging users to engage thoughtfully with technology, SODI aims to promote digital inclusion and collaborative learning.</p>
+
+            <!-- Project Image -->
+            <div class="project-image">
+                <img src="../images/agora.jpg" alt="Agora Box - SODI Project">
+            </div>
+
+            <h2 class="section-title">SODI's Objective</h2>
+            <p>The objective of the SODI project is to create an engaging and educational tool that helps users learn and interact with digital technologies in a more inclusive manner. By following the guided steps, users can capture images, input data, and contribute to a digital knowledge-sharing platform.</p>
+
+            <h2 class="section-title">How to Use SODI</h2>
+            <p>Users follow the website's step-by-step guide, which involves the following actions:</p>
+            <ul>
+                <li>Take a wooden card and write an answer to one of the Socratic prompts visible on the Agora box.</li>
+                <li>Place the wooden card on the Agora box.</li>
+                <li>Click the 'Capture Image' button to capture an image, which triggers a sound and lights up a neopixel. The contribution is then displayed on the website.</li>
+                <li>Insert the card into the box, triggering a green neopixel light as confirmation that the contribution has been saved.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Aila Araghi
+    </footer>
+
+</body>
+</html>

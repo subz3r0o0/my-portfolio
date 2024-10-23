@@ -1,0 +1,212 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #3e4e56;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #98c1a2; /* Soft green */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: #3e4e56; /* Dark slate gray for links */
+    text-decoration: none; /* Removes underline */
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Underline Hover Effect for Navigation Bar */
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6b8f71; /* Green underline color */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.navbar ul li a:hover {
+    color: #6b8f71; /* Darker green on hover */
+}
+
+.navbar ul li a.active {
+    color: #6b8f71; /* Active tab link */
+}
+
+/* Intro Section */
+.intro {
+    position: relative;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(135deg, rgba(152, 193, 162, 0.9), rgba(107, 143, 113, 0.9)); /* Strong green gradient */
+    z-index: 1; /* Ensure the content stays on top */
+    overflow: hidden; /* To contain the ::before element */
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/greenbg.jpg') center/cover no-repeat; /* Background image */
+    opacity: 0.2; /* Adjust the opacity of the background image */
+    z-index: -1; /* Ensure it stays behind all content */
+}
+
+.intro-content {
+    position: relative;
+    z-index: 2; /* Ensure the text and icons stay above the background */
+}
+
+/* Apply the Custom Font to Name Title */
+.name-title {
+    font-family: 'Verdana', sans-serif; /* Using the custom font */
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #ffffff, #ffffff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.divider {
+    width: 80px;
+    border: 2px solid white;
+    margin: 20px auto;
+}
+
+.role-description {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    margin-top: 20px;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 70px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #3e4e56;
+    position: relative;
+    z-index: 2; /* Keep portfolio content above background */
+}
+
+.portfolio h2 {
+    font-size: 2.7rem;
+    margin-bottom: 50px;
+    color: #98c1a2;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card a {
+    text-decoration: none; /* Removes underline from links inside project cards */
+    color: inherit; /* Inherit text color */
+}
+
+/* Optional: Add a hover effect for the project cards */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Image */
+.project-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 4px solid #98c1a2;
+}
+
+/* Project Info */
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3e4e56;
+}
+
+.project-info p {
+    font-size: 1.1rem;
+    color: #7b8e97;
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    background-color: #98c1a2;
+    color: #3e4e56;
+    text-align: center;
+}

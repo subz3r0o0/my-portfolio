@@ -1,0 +1,185 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #3e4e56;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #a7d4b2;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: #3e4e56;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #6b8f71;
+}
+/* Underline Hover Effect for Navigation Bar */
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6b8f71; /* Green underline color */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.navbar ul li a:hover {
+    color: #6b8f71; /* Darker green on hover */
+}
+
+/* Split Screen Layout */
+.contact-section {
+    display: flex;
+    height: 100vh;
+}
+
+.split {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Left side - Softer Green background */
+.split.left {
+    background-color: #98c1a2;
+    color: white;
+    text-align: center;
+}
+
+.split.left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.split.left p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Right side - White background */
+.split.right {
+    background-color: #ffffff;
+    color: #3e4e56;
+    text-align: center;
+}
+
+/* Contact Info Styles */
+.contact-info h2 {
+    font-size: 2rem;
+    color: #6b8f71;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Email Section */
+.contact-info a {
+    color: #6b8f71;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Message Box */
+.contact-form {
+    margin-bottom: 50px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #98c1a2;
+    outline: none;
+    font-size: 1rem;
+    color: #3e4e56;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    resize: none;
+    transition: border-color 0.3s;
+}
+
+.contact-form textarea:focus {
+    border-color: #6b8f71;
+}
+
+.send-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6b8f71;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: #98c1a2;
+}
+
+/* Hire Me Button */
+.hire-me-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent; /* Transparent background */
+    color: #6b8f71; /* Visible green text */
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid #6b8f71; /* Border to ensure visibility */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.hire-me-btn:hover {
+    background-color: #6b8f71; /* Green background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    background-color: #98c1a2;
+    color: #3e4e56;
+    text-align: center;
+}

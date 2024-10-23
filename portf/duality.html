@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duality Project - Arduino x AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Embedded CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #3e4e56;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #98c1a2;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar ul li a {
+            color: #3e4e56;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .navbar ul li a:hover {
+            color: #6b8f71;
+        }
+
+        .navbar ul li a.active {
+            color: #6b8f71;
+        }
+
+        /* Project Header */
+        .project-header {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #98c1a2, #6b8f71); /* Green gradient */
+            color: white;
+        }
+
+        .project-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .project-header p {
+            font-size: 1.3rem;
+        }
+
+        /* Project Details Section */
+        .project-details {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            border-top: 3px solid #98c1a2;
+            border-bottom: 3px solid #98c1a2;
+        }
+
+        .project-description {
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .project-description h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #3e4e56;
+        }
+
+        .project-description p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Image Styling */
+        .project-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 25px;
+            background-color: #98c1a2;
+            color: #3e4e56;
+            text-align: center;
+        }
+
+        /* Styling for subheadings */
+        .section-title {
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #3e4e56;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="../values.html">Values</a></li>
+            <li><a href="../shop.html">Shop</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Unique Header Section for Duality Project -->
+    <header class="project-header">
+        <div class="project-content">
+            <h1>Duality Project - Arduino x AI</h1>
+            <p>Exploring the Intersection of Emotions, Physiology, and Artificial Intelligence</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="project-details">
+        <div class="project-description">
+            <h2>Project Overview</h2>
+            <p>In this project, an Arduino circuit measures the user's heart rate by detecting blood flow in the fingertip. This data is recorded and used to calculate the user's beats per minute (bpm), providing an objective measure of their emotional state.</p>
+
+            <p>HumeAI utilises advanced facial recognition technology to analyse emotions. Users initiate the process by capturing an image via their webcam and indicating their readiness by pressing the 'C' key. HumeAI then employs natural language processing and complex algorithms to identify emotional indicators, listing the top three emotions based on facial cues.</p>
+
+            <h2 class="section-title">Objective and Research</h2>
+            <p>The project aims to explore the relationship between physiological indicators and perceived emotions, combining data from the Arduino and HumeAI. This reveals variations between physiological and emotional responses, emphasising the integral role of emotions in intelligence (Martínez-Miranda et al., 2005).</p>
+
+            <p>Philosophically, this project delves into the debate between Physicalists and Dualists, questioning the mind's nature and whether machines can genuinely experience consciousness and emotions, as raised by scholars like Nussbaum (2003) and Descartes (1954).</p>
+
+            <h2 class="section-title">Key Technologies</h2>
+            <p>This project integrates technology with physiological aspects, using a pulse sensor and Arduino to measure heart rate. On the AI side, facial recognition with HumeAI analyses emotional cues, providing both objective and subjective insights into emotional states.</p>
+
+            <p>Despite AI's capability to decode physical attributes, it struggles with understanding the authenticity of human emotions, as highlighted by John Searle's "Chinese Room" thought experiment (Searle, 1980).</p>
+
+            <!-- Project Image -->
+            <div class="project-image">
+                <img src="../images/DUALITYMARKUP.png" alt="Duality Project: Arduino x AI">
+            </div>
+
+            <h2 class="section-title">Ethical Considerations</h2>
+            <p>The project raises important ethical concerns, such as the responsibility and accountability of AI systems in interpreting human emotions. Instances where physiological responses contradict AI assessments underscore the need for nuanced understanding of emotional intelligence.</p>
+
+            <p>Research by scholars like Rajpurkar et al. (2022) reinforces the critical role of human involvement in areas that demand emotional depth and authenticity, particularly in sensitive contexts like healthcare.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Aila Araghi
+    </footer>
+
+</body>
+</html>

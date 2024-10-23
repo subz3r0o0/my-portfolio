@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #3e4e56; /* Slate gray for text */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #98c1a2; /* Soft green */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: #3e4e56; /* Dark slate gray for links */
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #6b8f71; /* Darker green on hover */
+}
+
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6b8f71; /* Dark green underline */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.navbar ul li a.active {
+    color: #6b8f71; /* Active link color */
+}
+
+/* Product Section */
+.product-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Light gray background */
+    text-align: center;
+    color: #3e4e56; /* Slate gray text */
+}
+
+.product-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #98c1a2; /* Green for headers */
+}
+
+.product-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.product-info img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.product-details {
+    max-width: 400px;
+    text-align: left;
+}
+
+.product-details ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+}
+
+.product-details h3 {
+    font-size: 1.8rem;
+    color: #6b8f71; /* Dark green for subheadings */
+}
+
+.buy-now-btn {
+    padding: 10px 20px;
+    background-color: #6b8f71; /* Dark green for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #4e7254; /* Darker green on hover */
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #98c1a2; /* Soft green background */
+    color: #3e4e56; /* Slate gray text */
+    text-align: center;
+}
