@@ -3,13 +3,13 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light gray background */
-    color: #3e4e56; /* Slate gray for text */
+    background-color: #f4f4f4;
+    color: #2e3a47; /* Darker color for text */
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #98c1a2; /* Soft green */
+    background-color: #2a3a5d; /* Royal dark blue */
     padding: 15px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -25,19 +25,14 @@ body {
 }
 
 .navbar ul li a {
-    color: #3e4e56; /* Dark slate gray for links */
+    color: #f0f4f9; /* Light blue-gray for contrast */
     text-decoration: none;
     padding: 12px 20px;
     font-weight: 500;
     font-size: 1.1rem;
-    position: relative;
-    transition: color 0.3s ease-in-out;
 }
 
-.navbar ul li a:hover {
-    color: #6b8f71; /* Darker green on hover */
-}
-
+/* Underline Hover Effect for Navigation Bar */
 .navbar ul li a::before {
     content: '';
     position: absolute;
@@ -45,7 +40,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #6b8f71; /* Dark green underline */
+    background-color: #1f2d48; /* Darker blue for underline */
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -56,69 +51,132 @@ body {
     transform: scaleX(1);
 }
 
+.navbar ul li a:hover,
 .navbar ul li a.active {
-    color: #6b8f71; /* Active link color */
+    color: #1f2d48; /* Darker blue for active and hover state */
 }
 
-/* Product Section */
-.product-section {
-    padding: 50px 20px;
-    background-color: #f4f4f4; /* Light gray background */
-    text-align: center;
-    color: #3e4e56; /* Slate gray text */
-}
-
-.product-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #98c1a2; /* Green for headers */
-}
-
-.product-info {
+/* Split Screen Layout */
+.contact-section {
     display: flex;
+    height: 100vh;
+}
+
+.split {
+    width: 50%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 40px;
+    padding: 50px;
 }
 
-.product-info img {
-    max-width: 300px;
+/* Left side - Softer Blue background */
+.split.left {
+    background-color: #2a3a5d;
+    color: white;
+    text-align: center;
+}
+
+.split.left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.split.left p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Right side - White background */
+.split.right {
+    background-color: #ffffff;
+    color: #2e3a47;
+    text-align: center;
+}
+
+/* Contact Info Styles */
+.contact-info h2 {
+    font-size: 2rem;
+    color: #1f2d48;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Email Section */
+.contact-info a {
+    color: #1f2d48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Message Box */
+.contact-form {
+    margin-bottom: 50px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
     border-radius: 8px;
+    border: 2px solid #2a3a5d;
+    outline: none;
+    font-size: 1rem;
+    color: #2e3a47;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    resize: none;
+    transition: border-color 0.3s;
 }
 
-.product-details {
-    max-width: 400px;
-    text-align: left;
+.contact-form textarea:focus {
+    border-color: #1f2d48;
 }
 
-.product-details ul {
-    list-style-type: disc;
-    margin: 10px 0 20px 20px;
-}
-
-.product-details h3 {
-    font-size: 1.8rem;
-    color: #6b8f71; /* Dark green for subheadings */
-}
-
-.buy-now-btn {
+.send-btn {
+    margin-top: 20px;
     padding: 10px 20px;
-    background-color: #6b8f71; /* Dark green for buttons */
-    color: #ffffff;
+    background-color: #1f2d48;
+    color: white;
+    font-size: 1rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1rem;
     transition: background-color 0.3s ease;
 }
 
-.buy-now-btn:hover {
-    background-color: #4e7254; /* Darker green on hover */
+.send-btn:hover {
+    background-color: #2a3a5d;
+}
+
+/* Hire Me Button */
+.hire-me-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: #1f2d48;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid #1f2d48;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.hire-me-btn:hover {
+    background-color: #1f2d48;
+    color: white;
 }
 
 /* Footer */
 footer {
-    padding: 20px;
-    background-color: #98c1a2; /* Soft green background */
-    color: #3e4e56; /* Slate gray text */
+    padding: 25px;
+    background-color: #2a3a5d;
+    color: #f0f4f9;
     text-align: center;
 }
