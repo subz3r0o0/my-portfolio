@@ -4,12 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #3e4e56;
+    color: #2e3a47; /* Darker color for text */
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #98c1a2;
+    background-color: #2a3a5d; /* Royal dark blue */
     padding: 15px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -25,7 +25,7 @@ body {
 }
 
 .navbar ul li a {
-    color: #3e4e56;
+    color: #f0f4f9; /* Light blue-gray for contrast */
     text-decoration: none;
     padding: 12px 20px;
     font-weight: 500;
@@ -33,24 +33,24 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #6b8f71;
+    color: #1f2d48; /* Darker blue on hover */
 }
 
 .navbar ul li a.active {
-    color: #6b8f71;
+    color: #1f2d48; /* Active tab link */
 }
 
 /* Project Header */
 .project-header {
     padding: 100px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #98c1a2, #6b8f71);
+    background: linear-gradient(135deg, #2a3a5d, #1f2d48); /* Royal dark blue gradient */
     color: white;
 }
 
 /* Unique Header Styling for each project */
 .arduino-header {
-    background: linear-gradient(135deg, #7ca9a5, #6b8f71);
+    background: linear-gradient(135deg, #243451, #1f2d48); /* Darker variant */
 }
 
 .project-header h1 {
@@ -70,8 +70,8 @@ body {
     align-items: flex-start;
     padding: 50px 20px;
     background-color: #ffffff;
-    border-top: 3px solid #98c1a2;
-    border-bottom: 3px solid #98c1a2;
+    border-top: 3px solid #2a3a5d; /* Matching royal blue border */
+    border-bottom: 3px solid #2a3a5d;
 }
 
 .project-image img {
@@ -88,7 +88,7 @@ body {
 .project-description h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #3e4e56;
+    color: #2e3a47;
 }
 
 .project-description p {
@@ -100,7 +100,7 @@ body {
 /* Footer */
 footer {
     padding: 25px;
-    background-color: #98c1a2;
-    color: #3e4e56;
+    background-color: #2a3a5d; /* Royal dark blue */
+    color: #f0f4f9;
     text-align: center;
 }
