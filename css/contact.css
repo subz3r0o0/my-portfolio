@@ -4,12 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #3e4e56;
+    color: #2e3a47;
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #98c1a2; /* Softer green */
+    background-color: #2a3a5d; /* Softer royal blue */
     padding: 15px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -25,7 +25,7 @@ body {
 }
 
 .navbar ul li a {
-    color: #3e4e56;
+    color: #f0f4f9; /* Light blue-gray */
     text-decoration: none;
     padding: 12px 20px;
     font-weight: 500;
@@ -40,7 +40,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #6b8f71; /* Matching green for underline */
+    background-color: #1f2d48; /* Darker blue for underline */
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -53,7 +53,7 @@ body {
 
 .navbar ul li a:hover,
 .navbar ul li a.active {
-    color: #6b8f71; /* Matching green */
+    color: #1f2d48; /* Darker blue */
 }
 
 /* Split Screen Layout */
@@ -70,9 +70,9 @@ body {
     padding: 50px;
 }
 
-/* Left side - Softer Green background */
+/* Left side - Softer Blue background */
 .split.left {
-    background-color: #98c1a2;
+    background-color: #2a3a5d; /* Softer royal blue */
     color: white;
     text-align: center;
 }
@@ -90,14 +90,14 @@ body {
 /* Right side - White background */
 .split.right {
     background-color: #ffffff;
-    color: #3e4e56;
+    color: #2e3a47;
     text-align: center;
 }
 
 /* Contact Info Styles */
 .contact-info h2 {
     font-size: 2rem;
-    color: #6b8f71;
+    color: #1f2d48; /* Darker blue */
     margin-bottom: 15px;
 }
 
@@ -108,7 +108,7 @@ body {
 
 /* Email Section */
 .contact-info a {
-    color: #6b8f71;
+    color: #1f2d48;
     text-decoration: none;
     font-weight: bold;
 }
@@ -123,10 +123,10 @@ body {
     max-width: 600px;
     padding: 15px;
     border-radius: 8px;
-    border: 2px solid #98c1a2;
+    border: 2px solid #2a3a5d; /* Softer royal blue */
     outline: none;
     font-size: 1rem;
-    color: #3e4e56;
+    color: #2e3a47;
     background-color: #f4f4f4;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     resize: none;
@@ -134,13 +134,13 @@ body {
 }
 
 .contact-form textarea:focus {
-    border-color: #6b8f71;
+    border-color: #1f2d48; /* Darker blue on focus */
 }
 
 .send-btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #6b8f71;
+    background-color: #1f2d48; /* Darker blue */
     color: white;
     font-size: 1rem;
     border: none;
@@ -150,7 +150,7 @@ body {
 }
 
 .send-btn:hover {
-    background-color: #98c1a2;
+    background-color: #2a3a5d; /* Softer royal blue */
 }
 
 /* Hire Me Button */
@@ -158,10 +158,10 @@ body {
     display: inline-block;
     padding: 15px 30px;
     background-color: transparent;
-    color: #6b8f71;
+    color: #1f2d48; /* Darker blue */
     font-size: 1.2rem;
     font-weight: 600;
-    border: 2px solid #6b8f71;
+    border: 2px solid #1f2d48;
     border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -169,14 +169,14 @@ body {
 }
 
 .hire-me-btn:hover {
-    background-color: #6b8f71;
+    background-color: #1f2d48;
     color: white;
 }
 
 /* Footer */
 footer {
     padding: 25px;
-    background-color: #98c1a2;
-    color: #3e4e56;
+    background-color: #2a3a5d; /* Softer royal blue */
+    color: #f0f4f9;
     text-align: center;
 }
