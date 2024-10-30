@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #3e4e56;
+    color: #2e3a47;
 }
 
 /* Top Bar Layout */
@@ -13,7 +13,7 @@ body {
     justify-content: space-between;
     padding: 15px;
     align-items: center;
-    background-color: #98c1a2;
+    background-color: #2a3a5d; /* Royal dark blue */
 }
 
 /* Search Bar Styles */
@@ -25,13 +25,13 @@ body {
     width: 300px;
     padding: 10px;
     font-size: 1.1rem;
-    border: 2px solid #6b8f71;
+    border: 2px solid #1f2d48; /* Darker blue */
     border-radius: 8px;
     outline: none;
 }
 
 #search-bar:focus {
-    border-color: #98c1a2;
+    border-color: #2a3a5d; /* Royal blue on focus */
 }
 
 /* Dropdown Menu Styles */
@@ -42,7 +42,7 @@ body {
     left: 0;
     width: 300px;
     background-color: white;
-    border: 2px solid #6b8f71;
+    border: 2px solid #1f2d48;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
@@ -52,14 +52,14 @@ body {
     display: block;
     padding: 10px;
     text-align: left;
-    color: #3e4e56;
+    color: #2e3a47;
     text-decoration: none;
     font-size: 1.1rem;
     border-bottom: 1px solid #eee;
 }
 
 .dropdown-menu a:hover {
-    background-color: #98c1a2;
+    background-color: #2a3a5d; /* Dark blue on hover */
     color: white;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .navbar ul li a {
-    color: #3e4e56;
+    color: #f0f4f9; /* Light blue-gray */
     text-decoration: none;
     padding: 12px 20px;
     font-weight: 500;
@@ -94,7 +94,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #6b8f71;
+    background-color: #1f2d48; /* Dark blue underline */
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -107,13 +107,13 @@ body {
 
 .navbar ul li a:hover,
 .navbar ul li a.active {
-    color: #6b8f71;
+    color: #1f2d48; /* Dark blue */
 }
 
 /* Title Styling */
 .shop-section h2 {
     font-size: 3rem;
-    color: #6b8f71;
+    color: #2a3a5d; /* Royal dark blue */
     margin-bottom: 20px;
 }
 
@@ -121,7 +121,7 @@ body {
 .shop-section {
     padding: 70px 20px;
     text-align: center;
-    color: #3e4e56;
+    color: #2e3a47;
 }
 
 .shop-category {
@@ -131,7 +131,7 @@ body {
 .shop-category h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #6b8f71;
+    color: #2a3a5d; /* Royal dark blue */
 }
 
 /* Shop Items */
@@ -161,12 +161,12 @@ body {
 .shop-item h4 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #2b6e9d;
+    color: #1f2d48; /* Dark blue for item titles */
 }
 
 .shop-item p {
     font-size: 0.9rem;
-    color: #7a9eaf;
+    color: #6b7b8c;
 }
 
 /* Explore More Button */
@@ -174,7 +174,7 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #6b8f71;
+    background-color: #2a3a5d; /* Royal dark blue */
     color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
@@ -184,13 +184,13 @@ body {
 }
 
 .explore-more-btn:hover {
-    background-color: #98c1a2;
+    background-color: #1f2d48; /* Darker blue on hover */
 }
 
 /* Footer */
 footer {
     padding: 25px;
-    background-color: #98c1a2;
-    color: #3e4e56;
+    background-color: #2a3a5d; /* Royal dark blue */
+    color: #f0f4f9;
     text-align: center;
 }
